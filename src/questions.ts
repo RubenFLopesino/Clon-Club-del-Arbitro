@@ -1,16 +1,4 @@
-enum QuestionOption {
-  A = 'a',
-  B = 'b',
-  C = 'c',
-}
-
-interface Question {
-  question: string;
-  options: {
-    [key in QuestionOption]: string;
-  };
-  correctAnswer: { option: QuestionOption; explanation: string };
-}
+import { Question, QuestionOption } from './exam/exam.interface';
 
 const questions: Question[] = [
   {
